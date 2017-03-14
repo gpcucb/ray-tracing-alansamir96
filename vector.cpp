@@ -61,7 +61,6 @@ void vector::show()
 vector vector::suma(vector vec)
 {
 	vector vecres;
-	float x1, y1, z1;
 	vecres.x = this->x + vec.x;
 	vecres.y = this->y + vec.y;
 	vecres.z = this->z + vec.z;
@@ -71,7 +70,6 @@ vector vector::suma(vector vec)
 vector vector::resta(vector vec)
 {
 	vector vecres;
-	float x1, y1, z1;
 	vecres.x = this->x - vec.x;
 	vecres.y = this->y - vec.y;
 	vecres.z = this->z - vec.z;
@@ -90,7 +88,6 @@ float vector::modulo()
 
 vector vector::producto_vectorial(vector ve)
 {
-	float xa, ya, za;
 	vector vecres;
 	vecres.x = (this->y * ve.z) - (ve.y * this->z);
 	vecres.y = (this->x * ve.z) - (ve.x * this->z);
@@ -98,10 +95,12 @@ vector vector::producto_vectorial(vector ve)
 	return vecres;
 }
 
+/*
 float vector::producto_escalar(vector ve)
 {
 
 }
+*/
 
 vector vector::producto_escalar_porvector(float v)
 {
