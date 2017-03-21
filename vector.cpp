@@ -95,12 +95,14 @@ vector vector::producto_vectorial(vector ve)
 	return vecres;
 }
 
-/*
+
 float vector::producto_escalar(vector ve)
 {
-
+	float res;
+	res = (this->x * ve.x) + (this->y * ve.y) + (this->z * z);
+	return res;
 }
-*/
+
 
 vector vector::producto_escalar_porvector(float v)
 {

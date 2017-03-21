@@ -20,6 +20,62 @@ camara::~camara()
 {
 }
 
+vector camara::geteje()
+{
+	return this->eje;
+}
+
+vector camara::getcenter()
+{
+	return this->center;
+}
+
+vector camara::getup()
+{
+	return this->up;
+}
+
+float camara::getfov()
+{
+	return this->fov;
+}
+
+float camara::getdf()
+{
+	return this->df;
+}
+
+void camara::seteje(vector eje1)
+{
+	this->eje.setX(eje1.getX());
+	this->eje.setY(eje1.getY());
+	this->eje.setZ(eje1.getZ());
+}
+
+void camara::setcenter(vector center1)
+{
+	this->center.setX(center1.getX());
+	this->center.setY(center1.getY());
+	this->center.setZ(center1.getZ());
+}
+
+void camara::setup(vector up1)
+{
+	this->up.setX(up1.getX());
+	this->up.setY(up1.getY());
+	this->up.setZ(up1.getZ());
+}
+
+void camara::setfov(float fov1)
+{
+	this->fov = fov1;
+}
+
+void camara::setdf(float df1)
+{
+	this->df = df1;
+}
+
 vector camara::vectorW()
 {
 	vector vecres,d;

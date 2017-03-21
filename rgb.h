@@ -1,3 +1,6 @@
+#ifndef RGB_H
+#define RGB_H
+
 #include<stdio.h>
 #include<iostream>
 
@@ -14,3 +17,4 @@ public:
 	~rgb();
 };
 
+#endif

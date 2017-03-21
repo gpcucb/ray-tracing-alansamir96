@@ -1,3 +1,6 @@
+#ifndef VECTOR_H
+#define VECTOR_H
+
 #include<stdio.h>
 #include<iostream>
 #include<math.h>
@@ -25,8 +28,9 @@ public:
 	vector resta(vector ve);
 	float modulo();
 	vector producto_vectorial(vector ve);
-	//float producto_escalar(vector ve);
+	float producto_escalar(vector ve);
 	vector producto_escalar_porvector(float v);
 
 };
 
+#endif
