@@ -55,7 +55,7 @@ int main()
 		{
 			direc = camara.DireccionRayo(i, j, nx, ny);
 			rayo ray(e, direc);
-			esfera.interseccion(ray);
+			//esfera.interseccion(ray);
 		}
 	}
 
