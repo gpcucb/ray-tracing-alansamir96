@@ -4,6 +4,7 @@
 #include "vector.h"
 #include "rayo.h"
 #include "esfera.h"
+#include "triangulo.h"
 
 int main()
 {
@@ -44,10 +45,16 @@ int main()
 	float	nx = 640.0;
 	float	ny = 480.0;
 
+	vector a(552.0, 8, 0.0);
+	vector b(0.0, 0.0, 0.0);
+	vector c(0.0, 0.0, 560.0);
+
 	vector posicion(370, 120, 370);
-	float radio = 120;
+	// float radio = 120;
 	camara camara(e, center, up, fov, df);
-	esfera esfera(posicion,radio);
+	//esfera esfera(posicion,radio);
+
+	triangulo triangulo(a, b, c);
 
 	for (int i = 0; i < nx; i++)
 	{
@@ -56,6 +63,7 @@ int main()
 			direc = camara.DireccionRayo(i, j, nx, ny);
 			rayo ray(e, direc);
 			//esfera.interseccion(ray);
+			triangulo.interseccion(ray);
 		}
 	}
 

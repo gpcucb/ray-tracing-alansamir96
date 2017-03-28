@@ -11,10 +11,10 @@ private:
 	vector a;
 	vector b;
 	vector c;
-	rgb color;
+	//rgb color;
 public:
 	triangulo();
-	triangulo(vector a, vector b, vector c, rgb color);
+	triangulo(vector a, vector b, vector c  /* , rgb color  */ );
 	~triangulo();
 	vector geta();
 	vector getb();

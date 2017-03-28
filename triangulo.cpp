@@ -5,12 +5,12 @@ triangulo::triangulo()
 {
 }
 
-triangulo::triangulo(vector a, vector b, vector c, rgb color)
+triangulo::triangulo(vector a, vector b, vector c  /*  , rgb color  */ )
 {
 	this->a = a;
 	this->b = b;
 	this->c = c;
-	this->color = color;
+	//this->color = color;
 }
 
 triangulo::~triangulo()
