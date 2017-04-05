@@ -49,4 +49,12 @@ class Vector
     z = @z * num
     return Vector.new(x, y, z)
   end
+
+  def normalize
+    x = @x / self.mod
+    y = @y / self.mod
+    z = @z / self.mod
+    return Vector.new(x, y, z)
+  end
+
 end
